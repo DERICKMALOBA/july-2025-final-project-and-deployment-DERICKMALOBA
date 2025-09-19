@@ -1,0 +1,342 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.nav-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    margin-left: 20px; /* Space between logo and nav links */
+    display: flex;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 0;
+}
+
+header .logo {
+    /* float: left; - Remove float */
+    font-size: 24px;
+    margin-left: 0;
+}
+
+header .nav-links {
+    display: flex; /* Keep it flex for larger screens */
+}
+
+.menu-icon {
+    display: none; /* Hidden by default on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+header nav {
+    /* float: right; - Remove float */
+    margin-top: 10px;
+    margin-right: 0;
+}
+
+header .highlight,
+header .current a {
+    color: #77aaff;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #77aaff;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 400px;
+    background: #505050 url('../images/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #77aaff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #5588cc;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #fff;
+}
+
+.feature-item {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.feature-item h2 {
+    color: #77aaff;
+}
+
+/* Services Section */
+.services {
+    padding: 20px;
+    background: #fff;
+    margin: 20px 0;
+    width: 80%; /* Added to ensure content is centered and not full width */
+    margin: 20px auto;
+}
+
+.services h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.service-item h2 {
+    color: #77aaff;
+    margin-bottom: 10px;
+}
+
+.service-item ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+.service-item li {
+    margin-bottom: 5px;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    background: #fff;
+    margin: 20px 0;
+    width: 80%; /* Added to ensure content is centered and not full width */
+    margin: 20px auto;
+}
+
+.about h1,
+.about h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    background: #fff;
+    margin: 20px 0;
+    width: 80%; /* Added to ensure content is centered and not full width */
+    margin: 20px auto;
+}
+
+.contact h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.contact-info h2 {
+    color: #77aaff;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row; /* Keep logo and icon in a row */
+        justify-content: space-between; /* Push logo left, icon right */
+        width: 90%; /* Adjust width for small screens */
+    }
+
+    header .nav-links {
+        display: none; /* Hide navigation links by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Below the header */
+        left: 0;
+        background-color: #333; /* Background for dropdown */
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    header .nav-links.active {
+        display: flex; /* Show navigation links when active */
+    }
+
+    header ul {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    header li {
+        padding: 10px 0;
+    }
+
+    .menu-icon {
+        display: flex; /* Display hamburger icon on small screens */
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .features {
+        flex-direction: column; /* Stack features vertically */
+        align-items: center;
+    }
+
+    .feature-item {
+        flex-basis: 90%; /* Occupy more width */
+        margin: 10px 0;
+    }
+
+    .services, .about, .contact {
+        width: 90%; /* Adjust width for small screens */
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
